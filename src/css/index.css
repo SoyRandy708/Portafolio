@@ -1,0 +1,36 @@
+:root {
+    --color1: #191919;
+    --color2: #ffffff;
+    --color3: #f9f9f9;
+}
+html {
+    font-size: 62.5%;
+}
+* {
+    box-sizing: border-box;
+    font-size: 1.8rem;    
+}
+body {
+    background-color: var(--color1);
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    margin: 0 auto;
+    color: var(--color2);
+}
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 0;
+    list-style: none;
+}
+header nav ul li a {
+    padding: 10px;
+    text-decoration: none;
+    color: var(--color2);
+}
