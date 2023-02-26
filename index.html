@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Randy Ochoa</title>
     <link rel="stylesheet" href="./src/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -19,22 +22,36 @@
         </nav>
     </header>
     <main>
-        <section>
-            <h1 id="inicio" class="titulo-h1">Mi Portafolio Web</h1>
-            <p>Randy Ochoa Nuñez</p>
+        <section class="inicio">
+            <div class="division">
+                <h1 id="inicio" class="titulo-h1">
+                    Hola! me llamo Randy <br>
+                    <strong>Frontend Developer.</strong>
+                </h1>
+                <img src="https://res.cloudinary.com/dwog1xmvw/image/upload/v1677433219/ProyectosPersonales/MiWeb/Programming-amico_tuxbty.svg" alt="">
+            </div>
         </section>
 
-        <section>
+        <section class="sobre-mi">
             <h2 id="sobre-mi" class="titulo-h2">Sobre mi</h2>
-            <img src="" alt="Una foto de Randy">
-            <p>
-                Hola a todos, mi nombre es Randy Ochoa Nuñez y soy Frontend Developer con +1 de un año experiencia, he participado en diversos proyectos personales y sin animo de lucro. <br>
-                Me apasiona usar la tecnologia para poder plasmar mis ideas y las de muchas mas personas poder hacerlas realidad ayudando a personas. <br>
-                Tengo experiencia en tecnologias como HTML, CSS, JavaScript, GIT & GitHub.
-            </p>
+            <div class="division">
+                <img src="https://images.pexels.com/photos/9833110/pexels-photo-9833110.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Una foto de Randy">
+                <div class="informacion">
+                    <p>
+                        Mi nombre es Randy Ochoa Nuñez, actualmente resido en Mexico Guerrero, desde pequeño he tenido una curiosidad y pasion hacia la tecnologia pero no fue hasta 2022 que comence mi camino como programador de forma autodidacta, actualemnte soy Frontend Developer con +1 año experiencia, he participado en diversos proyectos personales y sin animo de lucro. 
+                    </p>
+                    <p>
+                        Soy una persona a la que le gusta estar aprendiendo constantemente, con una buena capacidad analitica y muchas ganas de superarse.
+                    </p>
+                </div>
+            </div>
+            <div class="tecnologias">
+                <h3 class="titulo-h3">Tecnologias con las que he trabajado:</h3>
+                <!-- SLIDE CON LAS TECNOLOGIAS -->
+            </div>
         </section>
 
-        <section>
+        <section class="proyectos">
             <h2 id="proyectos" class="titulo-h2">Proyectos</h2>
             <!-- <article class="proyecto">
                 <img src="" alt="">
@@ -43,7 +60,7 @@
             </article> -->
         </section>
     </main>
-    <footer>
+    <footer class="contacto">
         <h2 id="contacto" class="titulo-h2">Contacto</h2>
         <ul>
             <li><a href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
