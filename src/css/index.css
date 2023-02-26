@@ -11,14 +11,13 @@ html {
     font-size: 1.8rem;    
 }
 body {
-    background-color: var(--color1);
     margin: 0;
     padding: 0;
 }
 
 /* HEADER */
 header {
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     color: var(--color2);
 }
@@ -29,8 +28,13 @@ header nav ul {
     margin: 0;
     list-style: none;
 }
+header nav ul li {
+    transition: .3s transform;
+}
 header nav ul li a {
-    padding: 10px;
+    color: black;
     text-decoration: none;
-    color: var(--color2);
+}
+header nav ul li:hover {
+    transform: scale(1.1);
 }
