@@ -24,13 +24,12 @@ header {
     position: sticky;
     top: 0;
     width: 100%;
-    margin: 0 auto;
     background-color: var(--color3);
 }
 header nav ul {
     display: flex;
-    width: 400px;
     justify-content: space-between;
+    width: 400px;
     padding: 20px;
     margin: 0 auto;
     list-style: none;
@@ -106,4 +105,43 @@ section {
 .sobre-mi .division p {
     line-height: 40px;
     letter-spacing: 1px;
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    padding: 20px;
+    background-color: var(--color3);
+}
+footer .botones {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+footer .botones li {
+    padding: 10px 5px;
+    background-color: var(--color2);
+    transition: .3s transform;
+}
+footer .botones li:hover {
+    transform: scale(1.1);
+}
+footer .botones li a {
+    padding: 15px;
+    font-size: 2rem;
+    text-decoration: none;
+}
+footer .botones li:hover a {
+    color: var(--color1);
+    transition: .3s color;
+}
+footer .botones li a i {
+    font-size: 2.5rem;
+    transition: .3s color;
+}
+footer .botones li:hover a i {
+    color: var(--color1);
 }
