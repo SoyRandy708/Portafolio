@@ -50,7 +50,9 @@ main {
     margin: 20px auto;
 }
 section {
+    padding: 20px;
     margin: 20px 0;
+    border-radius: 10px;
 }
 .titulo-h2 {
     font-size: 3rem;
@@ -85,8 +87,6 @@ section {
 
 /* SOBRE MI */
 .sobre-mi {
-    padding: 20px;
-    border-radius: 10px;
     background-color: var(--color2);
 }
 .sobre-mi .division {
@@ -107,41 +107,88 @@ section {
     letter-spacing: 1px;
 }
 
+/* PROYECTOS */
+.proyectos {
+    background-color: var(--color2);
+}
+
 /* FOOTER */
 footer {
     width: 100%;
     padding: 20px;
     background-color: var(--color3);
 }
-footer .botones {
+footer .titulo-h3 {
+    text-align: center;
+    text-shadow: 0 0 10px white;
+}
+.enviar-mensaje {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 600px;
+    margin: 40px auto;
+}
+.enviar-mensaje input, .enviar-mensaje textarea {
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    border-bottom: 3px solid var(--color1);
+    color:white;
+}
+.enviar-mensaje input:focus, .enviar-mensaje textarea:focus {
+    outline: none;
+}
+.enviar-mensaje input::placeholder, .enviar-mensaje textarea::placeholder {
+    color: var(--color1);
+}
+.enviar-mensaje textarea {
+    height: 200px;
+    resize: none;
+}
+.enviar-mensaje .doble-grilla {
+    grid-column: 1 / 3;
+}
+.enviar-mensaje button {
+    justify-self: center;
+    padding: 10px 20px;
+    border: 2px solid var(--color1);
+    background-color: transparent;
+    cursor: pointer;
+    transition: .3s transform;
+}
+.enviar-mensaje button:hover {
+    transform: scale(1.1);
+}
+.botones {
     display: flex;
     justify-content: space-between;
-    width: 400px;
+    width: 300px;
     margin: 0 auto;
     padding: 0;
     list-style: none;
 }
-footer .botones li {
+.botones li {
     padding: 10px 5px;
     background-color: var(--color2);
     transition: .3s transform;
 }
-footer .botones li:hover {
+.botones li:hover {
     transform: scale(1.1);
 }
-footer .botones li a {
+.botones li a {
     padding: 15px;
     font-size: 2rem;
     text-decoration: none;
 }
-footer .botones li:hover a {
+.botones li:hover a {
     color: var(--color1);
     transition: .3s color;
 }
-footer .botones li a i {
+.botones li a i {
     font-size: 2.5rem;
     transition: .3s color;
 }
-footer .botones li:hover a i {
+.botones li:hover a i {
     color: var(--color1);
 }

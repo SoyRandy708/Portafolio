@@ -63,6 +63,29 @@
     <footer class="contacto" id="contacto">
         <h2 class="titulo-h2">Contacto</h2>
 
+        <h3 class="titulo-h3">Enviame un mensaje</h3>
+        <form action="https://formsubmit.co/randy708ochoa@gmail.com" method="POST" class="enviar-mensaje">
+            <label>
+                Tu nombre
+                <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre">
+            </label>
+            <label>
+                Tu email
+                <input type="email" name="email" id="email" placeholder="Ingresa tu email">
+            </label>
+            <label class="doble-grilla">
+                Tu comentario
+                <textarea name="comentario" id="comentario" placeholder="Ingresa tu comentario"></textarea>
+            </label>
+
+            <button type="submit" class="doble-grilla">Enviar</button>
+
+            <input type="hidden" name="_next" value="https://soyrandy708.github.io/">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+        </form>
+
+        <h3 class="titulo-h3">Mis redes sociales</h3>
         <ul class="botones">
             <li><a href="https://www.linkedin.com/in/randy-ochoa/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
             <li><a href="https://github.com/SoyRandy708" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a></li>
