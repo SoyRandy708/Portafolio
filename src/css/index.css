@@ -153,44 +153,6 @@ footer .titulo-h3 {
     text-align: center;
     text-shadow: 0 0 10px white;
 }
-.enviar-mensaje {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    max-width: 600px;
-    margin: 40px auto;
-}
-.enviar-mensaje input, .enviar-mensaje textarea {
-    background-color: transparent;
-    width: 100%;
-    border: none;
-    border-bottom: 3px solid var(--color1);
-    color:white;
-}
-.enviar-mensaje input:focus, .enviar-mensaje textarea:focus {
-    outline: none;
-}
-.enviar-mensaje input::placeholder, .enviar-mensaje textarea::placeholder {
-    color: var(--color1);
-}
-.enviar-mensaje textarea {
-    height: 200px;
-    resize: none;
-}
-.enviar-mensaje .doble-grilla {
-    grid-column: 1 / 3;
-}
-.enviar-mensaje button {
-    justify-self: center;
-    padding: 10px 20px;
-    border: 2px solid var(--color1);
-    background-color: transparent;
-    cursor: pointer;
-    transition: .3s transform;
-}
-.enviar-mensaje button:hover {
-    transform: scale(1.1);
-}
 .botones {
     display: flex;
     justify-content: space-between;
