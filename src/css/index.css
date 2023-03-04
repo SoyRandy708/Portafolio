@@ -22,6 +22,7 @@ body {
 /* HEADER */
 header {
     position: sticky;
+    z-index: 10;
     top: 0;
     width: 100%;
     background-color: var(--color3);
@@ -142,6 +143,65 @@ section {
 .proyectos {
     background-color: var(--color2);
 }
+.proyectos-contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.proyecto {
+    position: relative;
+    background-color: var(--color1);
+    border-radius: 10px;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+.proyecto img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+}
+.proyecto .titulo {
+    font-size: 2rem;
+    margin: 0;
+}
+.proyecto .informacion {
+    padding: 10px;
+}
+.proyecto .botones {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px auto;
+    padding: 0;
+    list-style: none;
+}
+.proyecto .botones li {
+    padding: 10px 5px;
+    background-color: var(--color2);
+    transition: .3s transform;
+}
+.proyecto .botones li:hover {
+    transform: scale(1.1);
+}
+.proyecto .botones li a {
+    padding: 15px;
+    font-size: 2rem;
+    text-decoration: none;
+}
+.proyecto .botones li:hover a {
+    color: var(--color1);
+    transition: .3s color;
+}
+.proyecto .botones li a i {
+    font-size: 2.5rem;
+    transition: .3s color;
+}
+.proyecto .botones li:hover a i {
+    color: var(--color1);
+}
 
 /* FOOTER */
 footer {
@@ -153,7 +213,7 @@ footer .titulo-h3 {
     text-align: center;
     text-shadow: 0 0 10px white;
 }
-.botones {
+footer .botones {
     display: flex;
     justify-content: space-between;
     width: 300px;
@@ -161,27 +221,27 @@ footer .titulo-h3 {
     padding: 0;
     list-style: none;
 }
-.botones li {
+footer .botones li {
     padding: 10px 5px;
     background-color: var(--color2);
     transition: .3s transform;
 }
-.botones li:hover {
+footer .botones li:hover {
     transform: scale(1.1);
 }
-.botones li a {
+footer .botones li a {
     padding: 15px;
     font-size: 2rem;
     text-decoration: none;
 }
-.botones li:hover a {
+footer .botones li:hover a {
     color: var(--color1);
     transition: .3s color;
 }
-.botones li a i {
+footer .botones li a i {
     font-size: 2.5rem;
     transition: .3s color;
 }
-.botones li:hover a i {
+footer .botones li:hover a i {
     color: var(--color1);
 }
