@@ -32,24 +32,44 @@ header {
     z-index: 10;
     top: 0;
     width: 100%;
+    padding: 10px;
     background-color: var(--color3);
 }
-header nav ul {
+header nav {
     display: flex;
+    justify-content: end;
+}
+.menu-hamburguesa {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+}
+.menu-hamburguesa span {
+    background-color: white;
+    height: 3px;
+    width: 100%;
+}
+header nav .navegacion-mobile {
+    display: none;
     justify-content: space-between;
     width: 400px;
     padding: 20px;
     margin: 0 auto;
     list-style: none;
 }
-header nav ul li {
+header nav .navegacion-mobile li {
     transition: .3s transform;
 }
-header nav ul li a {
+header nav .navegacion-mobile li a {
     text-decoration: none;
 }
-header nav ul li:hover {
+header nav .navegacion-mobile li:hover {
     transform: scale(1.1);
+}
+header nav .navegacion-desktop {
+    display: none;
 }
 
 /* MAIN */
@@ -58,11 +78,11 @@ main {
     margin: 20px auto;
 }
 section {
-    padding: 20px;
     margin: 20px 0;
-    border-radius: 10px;
+    padding: 10px;
 }
 .titulo-h2 {
+    margin-top: 0;
     font-size: 3rem;
     font-weight: bold;
     text-align: center;
@@ -77,19 +97,19 @@ section {
 .inicio .division {
     display: grid;
     align-items: center;
-    grid-template-columns: 3fr 2fr;
 }
 .inicio .division img {
-    width: 400px;
+    max-width: 400px;
 }
 .inicio .titulo-h1 {  
-    font-size: 4.5rem;
+    margin-top: 0;
+    font-size: calc(10vw);
     font-weight: 900;
     letter-spacing: 3px;
     text-shadow: 0px 0px 20px white;
 }   
 .inicio .titulo-h1 strong {
-    font-size: 3.5rem;
+    font-size: calc(80%);
     font-weight: bold;
 }
 
@@ -100,11 +120,10 @@ section {
 .sobre-mi .division {
     display: grid;
     align-items: center;
-    grid-template-columns: 2fr 3fr;
 }
 .sobre-mi .division img {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     object-fit: cover;
     object-position: top;
@@ -116,9 +135,7 @@ section {
 }
 .tecnologias {
     display: grid;
-    grid-auto-columns: 100px;
-    grid-auto-rows: 120px;
-    grid-auto-flow: column;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
     gap: 20px;
 }
 .tecnologia {
@@ -213,12 +230,8 @@ section {
 /* FOOTER */
 footer {
     width: 100%;
-    padding: 20px;
+    padding: 20px 0;
     background-color: var(--color3);
-}
-footer .titulo-h3 {
-    text-align: center;
-    text-shadow: 0 0 10px white;
 }
 footer .botones {
     display: flex;
