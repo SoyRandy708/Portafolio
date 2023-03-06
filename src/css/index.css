@@ -65,9 +65,6 @@ header nav .navegacion-mobile li {
 header nav .navegacion-mobile li a {
     text-decoration: none;
 }
-header nav .navegacion-mobile li:hover {
-    transform: scale(1.1);
-}
 header nav .navegacion-desktop {
     display: none;
 }
@@ -100,10 +97,11 @@ section {
 }
 .inicio .division img {
     max-width: 400px;
+    margin: 0 auto;
 }
 .inicio .titulo-h1 {  
     margin-top: 0;
-    font-size: calc(10vw);
+    font-size: calc(8vw);
     font-weight: 900;
     letter-spacing: 3px;
     text-shadow: 0px 0px 20px white;
@@ -124,6 +122,7 @@ section {
 .sobre-mi .division img {
     width: 300px;
     height: 300px;
+    margin: 0 auto;
     border-radius: 50%;
     object-fit: cover;
     object-position: top;
@@ -146,21 +145,6 @@ section {
 .tecnologia i {
     font-size: 8rem;
     transition: .5s color;
-}
-.html:hover .fa-html5 {
-    color: #f26700;
-}
-.css:hover .fa-css3-alt {
-    color: #2449d8;
-}
-.js:hover .fa-js {
-    color: #e4d04b;
-}
-.git:hover .fa-git-alt {
-    color: #e44c30;
-}
-.github:hover .fa-github {
-    color: black;
 }
 
 /* PROYECTOS */
@@ -207,24 +191,17 @@ section {
     background-color: var(--color2);
     transition: .3s transform;
 }
-.proyecto .botones li:hover {
-    transform: scale(1.1);
+.proyecto .botones li:active {
+    box-shadow: 0 0 10px white;
 }
 .proyecto .botones li a {
     padding: 15px;
     font-size: 2rem;
     text-decoration: none;
 }
-.proyecto .botones li:hover a {
-    color: var(--color1);
-    transition: .3s color;
-}
 .proyecto .botones li a i {
     font-size: 2.5rem;
     transition: .3s color;
-}
-.proyecto .botones li:hover a i {
-    color: var(--color1);
 }
 
 /* FOOTER */
@@ -246,22 +223,61 @@ footer .botones li {
     background-color: var(--color2);
     transition: .3s transform;
 }
-footer .botones li:hover {
-    transform: scale(1.1);
-}
 footer .botones li a {
     padding: 15px;
     font-size: 2rem;
     text-decoration: none;
 }
-footer .botones li:hover a {
-    color: var(--color1);
-    transition: .3s color;
-}
 footer .botones li a i {
     font-size: 2.5rem;
     transition: .3s color;
 }
-footer .botones li:hover a i {
-    color: var(--color1);
+
+/* MEDIA QUERIS */
+@media (hover:hover) {
+    /* HEADER */
+    header nav .navegacion-mobile li:hover {
+        transform: scale(1.1);
+    }
+
+    /* SOBRE MI */
+    .html:hover .fa-html5 {
+        color: #f26700;
+    }
+    .css:hover .fa-css3-alt {
+        color: #2449d8;
+    }
+    .js:hover .fa-js {
+        color: #e4d04b;
+    }
+    .git:hover .fa-git-alt {
+        color: #e44c30;
+    }
+    .github:hover .fa-github {
+        color: black;
+    }
+
+    /* PROYECTOS */
+    .proyecto .botones li:hover {
+        transform: scale(1.1);
+    }
+    .proyecto .botones li:hover a {
+        color: var(--color1);
+        transition: .3s color;
+    }
+    .proyecto .botones li:hover a i {
+        color: var(--color1);
+    }
+
+    /* FOOTER */
+    footer .botones li:hover {
+        transform: scale(1.1);
+    }
+    footer .botones li:hover a {
+        color: var(--color1);
+        transition: .3s color;
+    }
+    footer .botones li:hover a i {
+        color: var(--color1);
+    }
 }
