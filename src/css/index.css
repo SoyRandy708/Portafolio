@@ -136,8 +136,6 @@ section {
     height: 300px;
     margin: 0 auto;
     border-radius: 50%;
-    object-fit: cover;
-    object-position: top;
     border: 3px var(--color1) solid;
 }
 .sobre-mi .division p {
