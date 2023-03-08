@@ -1,16 +1,4 @@
 /* HEADER */
-header {
-    position: sticky;
-    z-index: 10;
-    top: 0;
-    width: 100%;
-    padding: 10px;
-    background-color: var(--color3);
-}
-header nav {
-    display: flex;
-    justify-content: end;
-}
 .menu-hamburguesa {
     display: none;
 }
@@ -18,7 +6,6 @@ header nav .navegacion-desktop {
     display: flex;
     justify-content: space-between;
     width: 400px;
-    padding: 20px;
     margin: 0 auto;
     list-style: none;
 }

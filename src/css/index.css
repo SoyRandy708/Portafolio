@@ -31,6 +31,7 @@ header {
     position: sticky;
     z-index: 10;
     top: 0;
+    height: 50px;
     width: 100%;
     padding: 10px;
     background-color: var(--color3);
@@ -53,17 +54,6 @@ header nav {
 }
 header nav .navegacion-mobile {
     display: none;
-    justify-content: space-between;
-    width: 400px;
-    padding: 20px;
-    margin: 0 auto;
-    list-style: none;
-}
-header nav .navegacion-mobile li {
-    transition: .3s transform;
-}
-header nav .navegacion-mobile li a {
-    text-decoration: none;
 }
 header nav .navegacion-desktop {
     display: none;
