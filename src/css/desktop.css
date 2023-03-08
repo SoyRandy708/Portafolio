@@ -2,6 +2,9 @@
 .menu-hamburguesa {
     display: none;
 }
+header nav .contenedor-navegacion-mobile {
+    display: none;
+}
 header nav .navegacion-desktop {
     display: flex;
     justify-content: space-between;
