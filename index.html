@@ -23,43 +23,41 @@
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#sobre-mi">Sobre mi</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
             </ul>
+
             <div class="menu-hamburguesa" id="menu-hamburguesa">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
+
             <div class="contenedor-navegacion-mobile inactivo" id="navegacion-mobile">
                 <ul class="navegacion-mobile">
                     <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#sobre-mi">Sobre mi</a></li>
                     <li><a href="#proyectos">Proyectos</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </div>
         </nav>
     </header>
+
     <main>
         <section class="inicio">
-            <div class="division">
-                <div class="informacion">
-                    <h1 class="titulo-h1">
-                        Hola! me llamo Randy <br>
-                        <strong>Frontend Developer.</strong>
-                    </h1>
-                    <ul class="botones">
-                        <li><a href="./src/assets/CV-Español.pdf" download="CV - Randy Ochoa Nuñez">Descargar CV</a></li>
-                    </ul>
-                </div>
-                <img src="https://res.cloudinary.com/dwog1xmvw/image/upload/v1677433219/ProyectosPersonales/MiWeb/Programming-amico_tuxbty.svg" alt="">
+            <h1 class="titulo_h1">Hola! me llamo Randy Frontend Developer.</h1>
+
+            <div class="botones">
+                <a href="./src/assets/CV-Español.pdf" download="CV - Randy Ochoa Nuñez">Descargar CV</a>
+                <a href="https://www.linkedin.com/in/randy-ochoa/" target="_blank"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+                <a href="https://github.com/SoyRandy708" target="_blank"><i class="fa-brands fa-github"></i>GitHub</a>
             </div>
         </section>
 
         <section class="sobre-mi" id="sobre-mi">
-            <h2 class="titulo-h2">Sobre mi</h2>
-            <div class="division">
+            <h2 class="titulo_h2">Sobre mi</h2>
+
+            <div class="sobre-mi_contenedor">
                 <img src="https://res.cloudinary.com/dwog1xmvw/image/upload/v1678293437/ProyectosPersonales/MiWeb/Foto-mia_hnwr6r.jpg" alt="Una foto de Randy">
+    
                 <div class="informacion">
                     <p>
                         Mi nombre es Randy Ochoa Nuñez, actualmente resido en Mexico Guerrero, desde pequeño he tenido una curiosidad y pasión hacia la tecnologia pero no fue hasta 2022 que comencé mi camino como programador de forma autodidacta, actualmente soy Frontend Developer con +1 año experiencia, he participado en diversos proyectos personales y sin animo de lucro. 
@@ -69,9 +67,12 @@
                     </p>
                 </div>
             </div>
+        </section>
+        
+        <section class="tecnologias">
+            <h3 class="titulo_h3">Tecnologias con las que he trabajado:</h3>
 
-            <h3 class="titulo-h3">Tecnologias con las que he trabajado:</h3>
-            <div class="tecnologias">
+            <div class="tecnologias_contenedor">
                 <div class="tecnologia html">
                     <i class="fa-brands fa-html5"></i>
                     <p>HTML</p>
@@ -97,13 +98,16 @@
 
         <section class="proyectos" id="proyectos">
             <h2 class="titulo-h2">Proyectos</h2>
-            <div class="proyectos-contenedor">
+
+            <div class="proyectos_contenedor">
                 <article class="proyecto">
                     <img src="https://res.cloudinary.com/dwog1xmvw/image/upload/v1677708429/ProyectosPersonales/MiWeb/formulario-validaciones_jmykzt.png" alt="Formulario de Validaciones">
+
                     <div class="informacion">
                         <h3 class="titulo">Formulario de validaciones</h3>
                         <p class="descripcion">Formulario para iniciar sesion en una pagina donde sino se escriben correctamente los requerimientos aparecen los campos que se tiene que modificar para enviar el formulario.</p>
                     </div>
+
                     <ul class="botones">
                         <li><a href="https://github.com/SoyRandy708/FormularioConValidaciones" target="_blank">Repositorio</a></li>
                         <li><a href="https://soyrandy708.github.io/FormularioConValidaciones/" target="_blank">Sitio Web</a></li>
@@ -112,10 +116,12 @@
 
                 <article class="proyecto">
                     <img src="https://res.cloudinary.com/dwog1xmvw/image/upload/v1677949661/ProyectosPersonales/MiWeb/numeros-aleatorios_reqeid.png" alt="Numeros Aleatorios">
+
                     <div class="informacion">
                         <h3 class="titulo">Numeros Aleatorios</h3>
                         <p class="descripcion">Pagina para generar la cantidad de numeros aleatorios que se quieran entre los rangos que desee el usuario.</p>
                     </div>
+
                     <ul class="botones">
                         <li><a href="https://github.com/SoyRandy708/NumerosAleatorios" target="_blank">Repositorio</a></li>
                         <li><a href="https://soyrandy708.github.io/NumerosAleatorios/" target="_blank">Sitio Web</a></li>
@@ -124,14 +130,6 @@
             </div>
         </section>
     </main>
-    <footer class="contacto" id="contacto">
-        <h2 class="titulo-h2">Contacto</h2>
-
-        <ul class="botones">
-            <li><a href="https://www.linkedin.com/in/randy-ochoa/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
-            <li><a href="https://github.com/SoyRandy708" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a></li>
-        </ul>
-    </footer>
 
     <script src="https://kit.fontawesome.com/2b20d1c479.js" crossorigin="anonymous"></script>
     <script src="./src/js/index.js"></script>
