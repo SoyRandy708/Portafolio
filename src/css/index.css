@@ -1,98 +1,69 @@
-:root {
-  --background-color-dark-1: #0a0b1e;
-  --background-color-dark-2: #0f113f;
-  --background-color-dark-3: #9d15eb;
-  --color-dark: #fff;
+* {
+  box-sizing: border-box;
+  color: #F1F6F9;
+  font-family: "ABeeZee", sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
-  font-size: 62.5%;
-}
-
-* {
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.8rem;
-  color: var(--color-dark);
 }
 
 body {
-  background-color: var(--background-color-dark-1);
+  background-color: #212A3E;
   margin: 0;
   padding: 0;
+  color: #F1F6F9;
 }
 
 body::-webkit-scrollbar {
-  background-color: var(--background-color-dark-2);
+  background-color: #394867;
   width: 10px;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--background-color-dark-3);
+  background-color: #212A3E;
   border-radius: 5px;
 }
 
-.inactivo {
-  display: none;
-}
-
-/* HEADER */
 header {
-  position: sticky;
+  position: fixed;
   z-index: 10;
-  top: 0;
-  height: 50px;
-  width: 100%;
-  padding: 10px;
-  background-color: var(--background-color-dark-3);
+  height: 100vh;
+  width: 100vw;
+  background-color: red;
 }
-
+@media (min-width: 500px) {
+  header {
+    height: 10vh;
+  }
+}
 header nav {
-  display: flex;
-  justify-content: end;
-}
-
-.menu-hamburguesa {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 30px;
-  height: 30px;
-}
-
-.menu-hamburguesa span {
-  background-color: var(--color-dark);
-  height: 3px;
   width: 100%;
+  height: 100%;
 }
-
-header nav .navegacion-mobile {
-  position: absolute;
-  top: 50px;
-  right: 0;
+header nav .navegacion {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   width: 100%;
-  height: calc(100vh - 50px);
-  margin: 0;
+  height: 100%;
   background-color: var(--background-color-dark-2);
   list-style: none;
 }
-
-header nav .navegacion-mobile li {
-  transition: 0.3s transform;
+@media (min-width: 500px) {
+  header nav .navegacion {
+    flex-direction: row;
+    padding: 0;
+  }
 }
-
-header nav .navegacion-mobile li a {
-  font-size: 7.5vw;
+header nav .navegacion li a {
+  font-size: 1.25rem;
+  line-height: 1.875rem;
   text-decoration: none;
-  font-weight: bold;
   padding: 20px;
 }
 
-header nav .navegacion-desktop {
+.inactivo {
   display: none;
 }
 
