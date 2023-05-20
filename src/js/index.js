@@ -1,8 +1,8 @@
-const menuHamburguesa = document.getElementById("menu-hamburguesa")
+const menu = document.getElementById("menu")
 
 function menuMobileToggle() {
-    const menuMobile = document.getElementById("navegacion-mobile")
-    menuMobile.classList.toggle("inactivo")
+    const header = document.querySelector("header")
+    header.classList.toggle("mostrar-menu")
 }
 
-menuHamburguesa.addEventListener("click", menuMobileToggle)
+menu.addEventListener("click", menuMobileToggle)
