@@ -10,11 +10,30 @@
     transition: height .5s ease;
 
 
-    .icono {
-        height: 66px;
-        width: 40px;
-        margin: 0 20px;
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 70px;
+        width: 90px;
+        padding: 10px 20px;
         cursor: pointer;
+
+        &__stick {
+            width: 100%;
+            height: 3px;
+            background-color: $color-one;
+            transition: transform .5s ease, opacity .5s ease;;
+        }
+
+        .menu__stick-1 {
+            transform-origin: left;
+        }
+
+        .menu__stick-3 {
+            transform-origin: left;
+        }
     }
 
     nav {
@@ -32,15 +51,6 @@
             margin: 0;
             list-style: none;
             background-color: $background-two;
-
-            // position: absolute;
-            // display: flex;
-            // flex-direction: column;
-            // justify-content: space-around;
-            // width: 100%;
-            // margin: 0;
-            // background-color: $background-two;
-            // list-style: none;
 
             .icono {
                 position: absolute;
@@ -61,12 +71,24 @@
 
 .mostrar-menu {
     height: 270px;
+
+    .menu__stick-1 {
+        transform: rotate(32.5deg);
+    }
+
+    .menu__stick-2 {
+        opacity: 0;
+    }
+
+    .menu__stick-3 {
+        transform: rotate(-32.5deg);
+    }
 }
 
 @media (min-width: 500px) {
     .header {
         
-        .icono {
+        .menu {
             display: none;
         }
 
