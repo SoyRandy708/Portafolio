@@ -1,3 +1,4 @@
+@use "sass:math";
 $background-one: #212A3E;
 $background-two: #394867;
 $background-three: #9BA4B5;
@@ -33,8 +34,9 @@ body::-webkit-scrollbar-thumb {
     border-radius: 5px;
 }
 
+
 @function calcular-rem($px) {
-    $rem: ($px / 16px) * 1rem;
+    $rem: math.div($px, 16) * 1rem;
     @return $rem;
 }
 
