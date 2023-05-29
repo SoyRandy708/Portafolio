@@ -1,0 +1,50 @@
+@use "sass:math";
+$background-one: #212A3E;
+$background-two: #394867;
+$background-three: #9BA4B5;
+$color-one: #F1F6F9;
+$color-two: black;
+$text-one: 'ABeeZee', sans-serif;
+$text-two: 'Comfortaa', cursive;
+
+* {
+    box-sizing: border-box;
+    color: $color-one;
+    font-family: $text-one;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $background-one;
+    margin: 0;
+    padding: 0;
+    color: $color-one;
+}
+
+body::-webkit-scrollbar {
+    background-color: $background-two;
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: $background-one;
+    border-radius: 5px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+@function calcular-rem($px) {
+    $rem: math.div($px, 16) * 1rem;
+    @return $rem;
+}
+
+@mixin config-letras($px) {
+    font-size: calcular-rem($px);
+    line-height: calcular-rem($px) * 1.5;
+}
