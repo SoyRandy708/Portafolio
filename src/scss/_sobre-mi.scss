@@ -1,5 +1,66 @@
 @use "./global" as *;
 
 .sobre-mi {
-    margin: 90px 0;
+    padding: 100px 10px;
+
+    h1 {
+        font-size: clamp(1.5rem, 5vw, 2.5rem);
+        text-align: center;
+
+        span {
+            display: block;
+        }
+    }
+
+    .sobre-mi__informacion {
+        display: grid;
+        gap: 20px;
+
+        .left-informacion {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            justify-content: space-evenly;
+
+            img {
+                width: 100%;
+                max-width: 500px;
+                border-radius: 25px;
+            }
+
+            a {
+                display: inline-block;
+                background-color: $background-two;
+                padding: 10px 20px;
+                border-radius: 10px;
+                text-decoration: none;
+                transition: transform .3s ease;
+
+
+                &:active {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        .right-informacion {
+            p {
+                @include fonts(20px)
+            }
+        }
+
+    }
+
+    @media (min-width: 700px) {
+        h1 {
+            span {
+                display: inline;
+            }
+        }
+
+        .sobre-mi__informacion {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
 }

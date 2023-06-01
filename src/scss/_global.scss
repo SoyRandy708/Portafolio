@@ -40,11 +40,11 @@ main {
 }
 
 @function calcular-rem($px) {
-    $rem: math.div($px, 16) * 1rem;
+    $rem: math.div($px, 16px) * 1rem;
     @return $rem;
 }
 
-@mixin config-letras($px) {
+@mixin fonts($px) {
     font-size: calcular-rem($px);
     line-height: calcular-rem($px) * 1.5;
 }

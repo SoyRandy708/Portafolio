@@ -6,7 +6,7 @@
     z-index: 10;
     height: 70px;
     width: 100vw;
-    background-color:$background-two;
+    background-color: $background-two;
     overflow: hidden;
     transition: height .5s ease;
 
@@ -61,7 +61,7 @@
 
             li {
                 a {
-                    @include config-letras(20);
+                    @include fonts(20px);
                     text-decoration: none;
                     padding: 10px;
                 }
