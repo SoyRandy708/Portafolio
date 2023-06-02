@@ -1,0 +1,32 @@
+@use "./global" as *;
+
+.tecnologias {
+    padding: 10px;
+
+    .titulo {
+        font-size:  clamp(1rem, 5vw, 1.75rem);;
+        text-align: center;
+    }
+
+    .tecnologias__contenedor {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+        gap: 10px;
+
+        .img__container {
+            margin: 0;
+            transition: transform .3s ease;
+
+            img {
+                width: 100%;
+            }
+
+            figcaption {
+                text-align: center;
+                font-weight: bold;
+                @include fonts(15px);
+            }
+        }
+    }
+}
