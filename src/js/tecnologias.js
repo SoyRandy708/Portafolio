@@ -6,7 +6,3 @@ contenedorImagenes.forEach(figure => {
 
     figcaption.textContent = img.alt
 })
-
-
-
-

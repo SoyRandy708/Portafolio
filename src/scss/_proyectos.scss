@@ -1,0 +1,62 @@
+@use "./global" as *;
+
+.proyectos {
+    padding: 80px 10px;
+
+    .titulo {
+        font-size: clamp(1.25rem, 5vw, 1.75rem);
+        text-align: center;
+    }
+
+    .proyectos__contenedor {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 10px;
+
+        .proyecto {
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: $background-two;
+
+            img {
+                width: 100%;
+                aspect-ratio: 16/9;
+            }
+
+            .informacion {
+                padding: 10px 10px 50px 10px;
+
+                h3 {
+                    font-size: clamp(1rem, 5vw, 1.25rem);
+                    margin: 0;
+                }
+            }
+
+            .botones {
+                position: absolute;
+                bottom: 0;
+                display: flex;
+                justify-content: space-evenly;
+                width: 100%;
+                padding: 0;
+                list-style: none;
+
+                a {
+                    display: inline-block;
+                    padding: 8px 12px;
+                    background-color: $background-one;
+                    text-decoration: none;
+                    transition: transform .3s ease;
+                    
+
+                    @media (hover:hover) {
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

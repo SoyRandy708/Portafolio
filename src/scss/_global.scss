@@ -25,12 +25,12 @@ body {
 }
 
 body::-webkit-scrollbar {
-    background-color: $background-two;
+    background-color: $background-one;
     width: 10px;
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: $background-one;
+    background-color: $background-two;
     border-radius: 5px;
 }
 
