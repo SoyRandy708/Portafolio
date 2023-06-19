@@ -14,15 +14,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
-  <script type="module" crossorigin src="/assets/index-38f51c35.js"></script>
-  <link rel="stylesheet" href="/assets/index-4c01e564.css">
+  <script type="module" crossorigin src="/assets/index-3da2dab8.js"></script>
+  <link rel="stylesheet" href="/assets/index-ae0e0ab1.css">
 </head>
 <body id="inicio">
     <header class="header">
-        <div class="menu" id="menu">
-            <span class="menu__stick menu__stick-1"></span>
-            <span class="menu__stick menu__stick-2"></span>
-            <span class="menu__stick menu__stick-3"></span>
+        <div class="opciones">
+            <div class="menu" id="menu">
+                <span class="menu__stick menu__stick-1"></span>
+                <span class="menu__stick menu__stick-2"></span>
+                <span class="menu__stick menu__stick-3"></span>
+            </div>
+            
+            <div class="modo-oscuro">
+                <span class="circulo"></span>
+            </div>
         </div>
 
         <nav>
@@ -32,6 +38,7 @@
                 <li><a class="item" href="#proyectos">Proyectos</a></li>
             </ul>
         </nav>
+        
     </header>
 
     <main>
@@ -99,10 +106,66 @@
             </div>
         </section>
 
-        <!-- <section class="proyectos" id="proyectos">
-            <h2 class="titulo-h2">Proyectos</h2>
+        <section class="proyectos" id="proyectos">
+            <h2 class="titulo">Proyectos</h2>
 
-            <div class="proyectos_contenedor">
+            <div class="proyectos__contenedor">
+                <article class="proyecto">
+                    <img src="https://res.cloudinary.com/dwog1xmvw/image/upload/v1677708429/ProyectosPersonales/MiWeb/formulario-validaciones_jmykzt.png" alt="Formulario de Validaciones">
+
+                    <div class="informacion">
+                        <h3 class="titulo">Formulario de validaciones</h3>
+                        <p class="descripcion">Formulario para iniciar sesion en una pagina donde sino se escriben correctamente los requerimientos aparecen los campos que se tiene que modificar para enviar el formulario.</p>
+                    </div>
+
+                    <ul class="botones">
+                        <li><a href="https://github.com/SoyRandy708/FormularioConValidaciones" target="_blank">Repositorio</a></li>
+                        <li><a href="https://soyrandy708.github.io/FormularioConValidaciones/" target="_blank">Sitio Web</a></li>
+                    </ul>
+                </article>
+
+                <article class="proyecto">
+                    <img src="https://res.cloudinary.com/dwog1xmvw/image/upload/v1677949661/ProyectosPersonales/MiWeb/numeros-aleatorios_reqeid.png" alt="Numeros Aleatorios">
+
+                    <div class="informacion">
+                        <h3 class="titulo">Numeros Aleatorios</h3>
+                        <p class="descripcion">Pagina para generar la cantidad de numeros aleatorios que se quieran entre los rangos que desee el usuario.</p>
+                    </div>
+
+                    <ul class="botones">
+                        <li><a href="https://github.com/SoyRandy708/NumerosAleatorios" target="_blank">Repositorio</a></li>
+                        <li><a href="https://soyrandy708.github.io/NumerosAleatorios/" target="_blank">Sitio Web</a></li>
+                    </ul>
+                </article>
+
+                <article class="proyecto">
+                    <img src="https://res.cloudinary.com/dwog1xmvw/image/upload/v1677708429/ProyectosPersonales/MiWeb/formulario-validaciones_jmykzt.png" alt="Formulario de Validaciones">
+
+                    <div class="informacion">
+                        <h3 class="titulo">Formulario de validaciones</h3>
+                        <p class="descripcion">Formulario para iniciar sesion en una pagina donde sino se escriben correctamente los requerimientos aparecen los campos que se tiene que modificar para enviar el formulario.</p>
+                    </div>
+
+                    <ul class="botones">
+                        <li><a href="https://github.com/SoyRandy708/FormularioConValidaciones" target="_blank">Repositorio</a></li>
+                        <li><a href="https://soyrandy708.github.io/FormularioConValidaciones/" target="_blank">Sitio Web</a></li>
+                    </ul>
+                </article>
+
+                <article class="proyecto">
+                    <img src="https://res.cloudinary.com/dwog1xmvw/image/upload/v1677949661/ProyectosPersonales/MiWeb/numeros-aleatorios_reqeid.png" alt="Numeros Aleatorios">
+
+                    <div class="informacion">
+                        <h3 class="titulo">Numeros Aleatorios</h3>
+                        <p class="descripcion">Pagina para generar la cantidad de numeros aleatorios que se quieran entre los rangos que desee el usuario.</p>
+                    </div>
+
+                    <ul class="botones">
+                        <li><a href="https://github.com/SoyRandy708/NumerosAleatorios" target="_blank">Repositorio</a></li>
+                        <li><a href="https://soyrandy708.github.io/NumerosAleatorios/" target="_blank">Sitio Web</a></li>
+                    </ul>
+                </article>
+
                 <article class="proyecto">
                     <img src="https://res.cloudinary.com/dwog1xmvw/image/upload/v1677708429/ProyectosPersonales/MiWeb/formulario-validaciones_jmykzt.png" alt="Formulario de Validaciones">
 
@@ -131,14 +194,34 @@
                     </ul>
                 </article>
             </div>
-        </section> -->
+        </section>
     </main>
 
-    <div>
-        <!--    AGREGAR MIS REDES EN FORMA FLOTANTE EN UNA ESQUINA -->
-    </div>
+    <section class="redes-sociales">
+        <a href="https://www.linkedin.com/in/randy-ochoa/" target="_blank">
+            <figure class="img__container">
+                <img src="/assets/linkedin-ee5ad663.svg" alt="LinkedIn">
+                <figcaption></figcaption>
+            </figure>
+        </a>
+        <a href="https://github.com/SoyRandy708" target="_blank">
+            <figure class="img__container">
+                <img src="/assets/github-b0babaf8.svg" alt="GitHub">
+                <figcaption></figcaption>
+            </figure>
+        </a>
+    </section>
 
     
     
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S6P7MPTXWG"></script>
+    <script>
+        window.dataLayer = window.dataLayer || []
+        function gtag(){dataLayer.push(arguments)}
+        gtag('js', new Date())
+
+        gtag('config', 'G-S6P7MPTXWG')
+    </script>
 </body>
 </html>
