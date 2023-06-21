@@ -10,7 +10,7 @@
     background-color: $background-two;
     overflow: hidden;
     transition: height .5s ease;
-    
+
     .opciones {
         display: flex;
         justify-content: space-between;
@@ -45,8 +45,8 @@
         .modo-oscuro {
             position: relative;
             width: 100px;
-            height: 25px;
-            border: 3px solid red;
+            height: 35px;
+            border: 3px solid $background-three;
             border-radius: 100px;
 
             &:hover {
@@ -59,8 +59,8 @@
                 bottom: 0;
                 left: 5px;
                 margin: auto;
-                width: 15px;
-                height: 15px;
+                width: 25px;
+                height: 25px;
                 background-color: yellow;
                 border-radius: 50%;
                 transition: all .3s ease;
@@ -118,8 +118,8 @@
 }
 
 .modo-color {
-    background-color: violet !important;
-    transform: translateX(70px);
+    background-color: $background-one !important;
+    transform: translateX(60px);
 }
 
 @media (min-width: 500px) {
