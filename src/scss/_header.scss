@@ -4,103 +4,111 @@
     position: fixed;
     top: 0;
     z-index: 10;
-    height: 70px;
     width: 100vw;
-    padding: 0 20px;
+    height: 60px;
     background-color: var(--background-two);
-    overflow: hidden;
-    transition: height .3s ease;
-
-    .opciones {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        .menu {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-evenly;
-            height: 70px;
-            width: 90px;
-            padding: 10px 20px;
-            cursor: pointer;
-            
-            &__stick {
-                width: 100%;
-                height: 3px;
-                background-color: var(--color-one);
-                transition: transform .3s ease, opacity .3s ease;;
-            }
+    transition: all .3s ease;
     
-            .menu__stick-1 {
-                transform-origin: left;
-            }
-    
-            .menu__stick-3 {
-                transform-origin: left;
-            }
-        }
-    
-        .modo-oscuro {
-            position: relative;
-            width: 100px;
-            height: 35px;
-            border: 3px solid var(--background-three);
-            border-radius: 100px;
-
-            &:hover {
-                cursor: pointer;
-            }
-    
-            .circulo {
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 5px;
-                margin: auto;
-                width: 25px;
-                height: 25px;
-                background-color: yellow;
-                border-radius: 50%;
-                transition: transform .3s ease;
-            }
-        }
-    }
-    
-    nav {
-        width: 100%;
-        height: 200px;
+    .header-container {
+        max-width: 800px;
+        height: 100%;
+        padding: 0 20px;
+        margin: 0 auto;
+        overflow: hidden;
         
-        .navegacion {
+        .opciones {
             display: flex;
-            flex-direction: column;
+            justify-content: space-between;
             align-items: center;
-            justify-content: space-evenly;
-            gap: 10px;
-            height: 100%;
-            padding: 0;
-            margin: 0;
-            list-style: none;
-
-            .icono {
-                position: absolute;
-                top: 0;
+    
+            .menu {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                height: 60px;
+                width: 60px;
+                cursor: pointer;
+                
+                
+                &__stick {
+                    width: 100%;
+                    height: 4px;
+                    background-color: var(--color-one);
+                    transition: transform .3s ease, opacity .3s ease;;
+                }
+        
+                .menu__stick-1 {
+                    transform-origin: left;
+                }
+        
+                .menu__stick-3 {
+                    transform-origin: left;
+                }
             }
-
-            li {
-                a {
-                    @include fonts(20px);
-                    text-decoration: none;
-                    padding: 10px;
+        
+            .modo-oscuro {
+                position: relative;
+                width: 100px;
+                height: 35px;
+                border: 3px solid var(--color-one);
+                border-radius: 100px;
+    
+                &:hover {
+                    cursor: pointer;
+                }
+        
+                .circulo {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 5px;
+                    margin: auto;
+                    width: 25px;
+                    height: 25px;
+                    background-color: var(--color-one);
+                    border-radius: 50%;
+                    transition: transform .3s ease;
+                }
+            }
+        }
+        
+        nav {
+            height: calc(100% - 60px);
+            
+            .navegacion {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                align-items: center;
+                justify-content: space-evenly;
+                gap: 20px;
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                list-style: none;
+    
+                .icono {
+                    position: absolute;
+                    top: 0;
+                }
+    
+                li {
+                    a {
+                        @include fonts(20px);
+                        text-decoration: none;
+                        padding: 10px;
+                        white-space: nowrap;                    
+                    }
                 }
             }
         }
     }
+
 }
 
 .mostrar-menu {
-    height: 270px;
+    height: 150px;
 
     .menu__stick-1 {
         transform: rotate(32.5deg);
@@ -116,31 +124,35 @@
 }
 
 .modo-color {
-    background-color: var(--background-one) !important;
     transform: translateX(60px);
 }
 
 @media (min-width: 500px) {
     .header {
-        display: flex;
-        justify-content: space-around;
-
-        .opciones {
-            order: 2;
-
-            .menu {
-                display: none;
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            
+            .opciones {
+                order: 2;
+    
+                .menu {
+                    display: none;
+                }
+            }
+    
+            nav {
+                width: 500px;
+                height: 100%;
+                order: 0;
+    
+                .navegacion {
+                    flex-direction: row;
+                    height: 100%;
+                    width: min-content;
+                }
             }
         }
 
-        nav {
-            width: 500px;
-            height: 100%;
-            order: 0;
-
-            .navegacion {
-                flex-direction: row;
-            }
-        }
     }
 }
