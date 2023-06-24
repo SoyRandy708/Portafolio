@@ -7,9 +7,9 @@
     height: 70px;
     width: 100vw;
     padding: 0 20px;
-    background-color: $background-two;
+    background-color: var(--background-two);
     overflow: hidden;
-    transition: height .5s ease;
+    transition: height .3s ease;
 
     .opciones {
         display: flex;
@@ -29,8 +29,8 @@
             &__stick {
                 width: 100%;
                 height: 3px;
-                background-color: $color-one;
-                transition: transform .5s ease, opacity .5s ease;;
+                background-color: var(--color-one);
+                transition: transform .3s ease, opacity .3s ease;;
             }
     
             .menu__stick-1 {
@@ -46,7 +46,7 @@
             position: relative;
             width: 100px;
             height: 35px;
-            border: 3px solid $background-three;
+            border: 3px solid var(--background-three);
             border-radius: 100px;
 
             &:hover {
@@ -63,7 +63,7 @@
                 height: 25px;
                 background-color: yellow;
                 border-radius: 50%;
-                transition: all .3s ease;
+                transition: transform .3s ease;
             }
         }
     }
@@ -82,12 +82,10 @@
             padding: 0;
             margin: 0;
             list-style: none;
-            background-color: $background-two;
 
             .icono {
                 position: absolute;
                 top: 0;
-
             }
 
             li {
@@ -118,7 +116,7 @@
 }
 
 .modo-color {
-    background-color: $background-one !important;
+    background-color: var(--background-one) !important;
     transform: translateX(60px);
 }
 
@@ -145,8 +143,4 @@
             }
         }
     }
-}
-
-@media (hover:hover) {
-    
 }

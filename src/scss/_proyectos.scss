@@ -17,7 +17,7 @@
             position: relative;
             border-radius: 10px;
             overflow: hidden;
-            background-color: $background-two;
+            background-color: var(--background-two);
 
             img {
                 width: 100%;
@@ -45,7 +45,7 @@
                 a {
                     display: inline-block;
                     padding: 8px 12px;
-                    background-color: $background-one;
+                    background-color: var(--background-three);
                     text-decoration: none;
                     transition: transform .3s ease;
                     

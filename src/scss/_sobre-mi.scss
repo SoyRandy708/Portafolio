@@ -41,10 +41,10 @@
                     gap: 10px;
                     width: clamp(100px, 100%, 250px);
                     height: 50px;
-                    background-color: $background-two;
+                    background-color: var(--background-two);
                     padding: 5px 10px;
                     border-radius: 10px;
-                    font-family: $text-two;
+                    font-family: var(--text-two);
                     text-decoration: none;
                     transition: transform .3s ease;
     

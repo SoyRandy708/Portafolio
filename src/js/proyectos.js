@@ -60,7 +60,7 @@ proyectos.map(proyecto => {
     p.textContent = descripcion
     p.classList.add("descripcion")
     ul.classList.add("botones")
-    botonWeb.textContent = "Repositorio"
+    botonWeb.textContent = "Sitio Web"
     botonWeb.href = web
     botonWeb.target = "_blank"
     botonGithub.textContent = "Github"

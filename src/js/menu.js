@@ -15,7 +15,24 @@ menu.addEventListener("click", () => {
 
 const modoOscuro = document.querySelector(".modo-oscuro")
 const circulo = document.querySelector(".modo-oscuro .circulo")
+let darkMode = true
 
-modoOscuro.addEventListener("click", () => {
+const changeColors = () => {
+    const root = document.querySelector(":root")
     circulo.classList.toggle("modo-color")
-})
+    darkMode = !darkMode
+
+    if(darkMode) {
+        root.style.setProperty("--background-one", "#1b0f21")
+        root.style.setProperty("--background-two", "#146C94")
+        root.style.setProperty("--background-three", "#854bac")
+        root.style.setProperty("--color-one", "#F1F6F9")
+    } else {
+        root.style.setProperty("--background-one", "#ebffff")
+        root.style.setProperty("--background-two", "#34e2e7")
+        root.style.setProperty("--background-three", "#cce3e3")
+        root.style.setProperty("--color-one", "black")
+    }
+}
+
+modoOscuro.addEventListener("click", changeColors)
