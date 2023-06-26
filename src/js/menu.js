@@ -23,7 +23,7 @@ const changeColors = () => {
     darkMode = !darkMode
 
     if(darkMode) {
-        root.style.setProperty("--background-one", "#1b0f21")
+        root.style.setProperty("--background-one", "#0f0e17")
         root.style.setProperty("--background-two", "#146C94")
         root.style.setProperty("--background-three", "#854bac")
         root.style.setProperty("--color-one", "#F1F6F9")
@@ -31,7 +31,7 @@ const changeColors = () => {
         root.style.setProperty("--background-one", "#ebffff")
         root.style.setProperty("--background-two", "#34e2e7")
         root.style.setProperty("--background-three", "#cce3e3")
-        root.style.setProperty("--color-one", "black")
+        root.style.setProperty("--color-one", "#0f0e17")
     }
 }
 

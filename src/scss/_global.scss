@@ -1,11 +1,10 @@
 @use "sass:math";
 :root {
-    --background-one: #1b0f21;
+    --background-one: #0f0e17;
     --background-two: #146C94;
     --background-three: #854bac;
     --color-one: #F1F6F9;
     --text-one: 'ABeeZee', sans-serif;
-    --text-two: 'Comfortaa', cursive;
 }
 
 * {
@@ -33,7 +32,6 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-thumb {
     background-color: var(--background-two);
-    border-radius: 5px;
 }
 
 main {

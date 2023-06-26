@@ -54,6 +54,7 @@ proyectos.map(proyecto => {
     article.classList.add("proyecto")
     img.src = imagen
     img.alt = nombre
+    img.loading = "lazy"
     div.classList.add("informacion")
     h3.textContent = nombre
     h3.classList.add("titulo")

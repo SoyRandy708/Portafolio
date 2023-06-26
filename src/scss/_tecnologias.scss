@@ -17,9 +17,17 @@
         .img__container {
             margin: 0;
             transition: transform .3s ease;
-
+            
             img {
                 width: 100%;
+                filter: drop-shadow(0 0 3px var(--color-one));
+                transition: filter 0.3s ease;
+
+                @media (hover:hover) {
+                    &:hover {
+                        filter: drop-shadow(0 0 10px var(--color-one));
+                    }
+                }
             }
 
             figcaption {
