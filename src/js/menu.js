@@ -12,10 +12,16 @@ menu.addEventListener("click", () => {
     header.classList.toggle("mostrar-menu")
 })
 
-
+const preferencia = window.matchMedia('(prefers-color-scheme: dark)').matches
 const modoOscuro = document.querySelector(".modo-oscuro")
 const circulo = document.querySelector(".modo-oscuro .circulo")
-let darkMode = true
+let darkMode = preferencia
+
+if (darkMode) {
+    circulo.classList.add("modo-color")
+} else {
+    circulo.classList.remove("modo-color")
+}
 
 const changeColors = () => {
     const root = document.querySelector(":root")

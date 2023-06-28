@@ -1,10 +1,20 @@
 @use "sass:math";
 :root {
-    --background-one: #0f0e17;
-    --background-two: #146C94;
-    --background-three: #854bac;
-    --color-one: #F1F6F9;
+    --background-one: #ebffff;
+    --background-two: #34e2e7;
+    --background-three: #cce3e3;
+    --color-one: #0f0e17;
     --text-one: 'ABeeZee', sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-one: #0f0e17;
+        --background-two: #146C94;
+        --background-three: #854bac;
+        --color-one: #F1F6F9;
+        --text-one: 'ABeeZee', sans-serif;
+    }
 }
 
 * {
