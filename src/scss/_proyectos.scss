@@ -10,50 +10,100 @@
 
     .proyectos__contenedor {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 10px;
+        place-items: center;
+        gap: 100px;
 
         .proyecto {
             position: relative;
-            border-radius: 10px;
-            overflow: hidden;
+            width: clamp(300px, 100%, 400px);
             background-color: var(--background-two);
-
+            border-radius: 10px;
+            
             img {
                 width: 100%;
-                aspect-ratio: 16/9;
+                object-fit: contain;
+                border-radius: 10px;
             }
-
+            
             .informacion {
-                padding: 10px 10px 50px 10px;
-
+                position: relative;
+                padding: 10px;
+                
                 h3 {
                     font-size: clamp(1rem, 5vw, 1.25rem);
                     margin: 0;
                 }
-            }
 
-            .botones {
-                position: absolute;
-                bottom: 0;
-                display: flex;
-                justify-content: space-evenly;
-                width: 100%;
-                padding: 0;
-                list-style: none;
-
-                a {
-                    display: inline-block;
-                    padding: 8px 12px;
-                    background-color: var(--background-three);
-                    text-decoration: none;
-                    transition: transform .3s ease;
-                    
-
-                    @media (hover:hover) {
-                        &:hover {
-                            transform: scale(1.1);
+                .botones {
+                    display: flex;
+                    justify-content: space-evenly;
+                    width: 100%;
+                    padding: 0;
+                    margin: 0;
+                    list-style: none;
+    
+                    a {
+                        display: inline-block;
+                        padding: 8px 12px;
+                        background-color: var(--background-three);
+                        text-decoration: none;
+                        transition: transform .3s ease;
+    
+                        @media (hover:hover) {
+                            &:hover {
+                                transform: scale(1.1);
+                            }
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 700px) {
+    .proyectos {
+        .proyectos__contenedor {
+            .proyecto {
+                grid-auto-flow: column;
+                background-color: transparent;
+
+                .informacion {
+                    background-color: var(--background-two);
+                    border-radius: 10px;
+                }
+
+                img {
+                    position: absolute;
+                    z-index: 5;
+                    top: 0;
+                    bottom: 0;
+                    width: clamp(300px, 75%, 400px);
+                    margin: auto;
+                }
+                
+                &:nth-child(even) {
+                    justify-self: end;
+                    
+                    img {
+                        right: 90%;
+                    }
+
+                    .informacion {
+                        padding: 10px 10px 10px 50px;
+                    }
+                }
+                
+                &:nth-child(odd) {
+                    justify-self: start;
+
+                    img {
+                        left: 90%;
+                        order: 1;
+                    }
+
+                    .informacion {
+                        padding: 10px 50px 10px 10px;
                     }
                 }
             }

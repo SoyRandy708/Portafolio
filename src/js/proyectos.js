@@ -22,13 +22,6 @@ const proyectos = [
         web: "https://soyrandy708.github.io/NumerosAleatorios/",
         github: "https://github.com/SoyRandy708/NumerosAleatorios",
     },
-    {
-        nombre: "Calculadora",
-        descripcion: "Calculadora basica para poder hacer sumas, restas, multiplicaciones y divisones, tambien tiene dark y light mode",
-        imagen: "https://i.imgur.com/JJeC54M.png",
-        web: "https://soyrandy708.github.io/Calculadora-JS/",
-        github: "https://github.com/SoyRandy708/Calculadora-JS",
-    },
     // {
     //     nombre: "",
     //     descripcion: "",
@@ -70,9 +63,9 @@ proyectos.map(proyecto => {
 
     article.appendChild(img)
     article.appendChild(div)
-    article.appendChild(ul)
     div.appendChild(h3)
     div.appendChild(p)
+    div.appendChild(ul)
     ul.appendChild(li1)
     ul.appendChild(li2)
     li1.appendChild(botonGithub)
